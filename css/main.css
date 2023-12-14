@@ -1,0 +1,25 @@
+.main__section {
+  padding-top: 146px;
+
+}
+
+.main-section__container {
+  min-height: 762px;
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 675px;
+  background-position: right 30px top 60px;
+}
+
+.main-section__title {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -15px;
+}
+
+.main-section__descr {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+}

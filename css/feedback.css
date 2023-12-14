@@ -1,0 +1,38 @@
+.feedback__item:not(:last-child) {
+  margin-bottom: 50px;
+
+}
+
+.feedback__list {
+  text-align: center;
+}
+
+.feedback__figure {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.feedback__img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 11px;
+}
+
+.feedback__name,
+.feedback__text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.feedback__text {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 680px;
+  text-align: left;
+  padding-top: 52px;
+}

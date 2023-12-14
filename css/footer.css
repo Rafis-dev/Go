@@ -1,0 +1,50 @@
+.footer {
+  padding: 50px 0 100px;
+}
+
+.address {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 39px;
+}
+
+.address__item_city {
+  margin-bottom: 38px;
+  background-image: url("../images/icons/location.svg");
+  max-width: 370px;
+
+}
+
+.address__item_phone {
+  background-image: url("../images/icons/phone.svg");
+  margin-bottom: 11px;
+}
+
+.address__item_mail {
+  background-image: url("../images/icons/envelope.svg");
+}
+
+.address__item {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 64px;
+}
+
+.social {
+  font-size: 0;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__link {
+  display: block;
+}
+
+
+.social__item:not(:last-child) {
+  margin-right: 26px;
+}

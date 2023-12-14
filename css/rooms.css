@@ -1,0 +1,57 @@
+.rooms__list {
+  list-style: none;
+  text-align: center;
+  margin: -13px;
+}
+
+.rooms__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  max-width: 580px;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 11.823% 0;
+  margin: 10px;
+  z-index: 1;
+}
+
+.rooms__item_theme_retro {
+  background-image: url("../images/1.jpg");
+  background-position: center bottom 20%;
+}
+
+.rooms__item_theme_star-wars {
+  background-image: url("../images/2.jpg");
+}
+
+.rooms__item_theme_wild-west {
+  background-image: url("../images/3.jpg");
+}
+
+.rooms__item_theme_neon {
+  background-image: url("../images/4.jpg");
+}
+
+.rooms__name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000;
+  transition: .4s;
+  z-index: -1;
+}
+
+.rooms__name:hover::after {
+  background-color: #0004;
+}

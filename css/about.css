@@ -1,0 +1,75 @@
+.about__image-box {
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(100% - 500px - 80px);
+  margin-right: 75px;
+}
+
+.about__content-box {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+.about__wrapper {
+  margin-bottom: 70px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.about__quote-text {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  white-space: pre-line;
+  padding-left: 31px;
+}
+
+.about__quote-text::before,
+.about__quote-text::after {
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.about__quote-text::before {
+  content: "\201c";
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+.about__quote-text:after {
+  content: " \201d";
+}
+
+
+
+.about__author {
+  margin-left: auto;
+  max-width: 390px;
+}
+
+.about__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 -10px;
+  float: left;
+  margin-right: 30px;
+}
+
+.about__name {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  padding-right: 41px;
+}

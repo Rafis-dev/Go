@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Проект GO</title>
+  <link rel="icon" href="assets/img/icon.svg">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="section main-section">
+      <div class="container main-section__container">
+        <h1 class="main-section__title">GAME OVER</h1>
+
+        <p class="main-section__descr">Новый формат игр и отдыха</p>
+      </div>
+
+    </section>
+
+    <section class="section rooms" id="rooms">
+      <div class="container">
+        <h2 class="section__title">Наши залы</h2>
+
+        <ul class="rooms__list">
+          <li class="rooms__item rooms__item_theme_retro"><a href="#" class="rooms__name">80's vibes</a></li>
+          <li class="rooms__item rooms__item_theme_star-wars"><a href="#" class="rooms__name">Star wars</a></li>
+          <li class="rooms__item rooms__item_theme_wild-west"><a href="#" class="rooms__name">Wild west</a></li>
+          <li class="rooms__item rooms__item_theme_neon"><a href="#" class="rooms__name">Neon style</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="container">
+        <h2 class="section__title">Забронировать</h2>
+
+        <form class="booking__form" name="booking-form" action="https://jsonplaceholder.typicode.com/posts"
+          method="post">
+
+          <fieldset class="booking__fieldset">
+            <label class="booking__label">
+              <input class="booking__input" type="radio" name="room" value="eighties">80's vibes
+            </label>
+
+            <label class="booking__label">
+              <input class="booking__input" type="radio" name="room" value="star-wars">star wars
+            </label>
+
+            <label class="booking__label">
+              <input class="booking__input" type="radio" name="room" value="wild-west">wild west
+            </label>
+
+            <label class="booking__label">
+              <input class="booking__input" type="radio" name="room" value="neon-style">neon style
+            </label>
+          </fieldset>
+
+          <fieldset class="booking__fieldset">
+            <legend class="booking__legend">Собери набор развлечений</legend>
+
+            <fieldset class="booking__fieldset">
+              <legend class="booking__legend">Приставка</legend>
+
+              <label class="booking__label">
+                <input class="booking__input" type="radio" name="console" value="playstation">PlayStation
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="radio" name="console" value="sega-mega-drive">Sega Mega Drive
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="radio" name="console" value="x-box-one">X-box One S
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="radio" name="console" value="dendy">Dendy
+              </label>
+            </fieldset>
+
+            <fieldset class="booking__fieldset">
+              <legend class="booking__legend">Настольные игры</legend>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="board-game" value="jenga">Jenga
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="board-game" value="monopoly">Monopoly
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="board-game" value="манчкин">Манчкин
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="board-game" value="alias">Alias
+              </label>
+
+            </fieldset>
+
+            <fieldset class="booking__fieldset">
+              <legend>Дополнительно</legend>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="extra" value="karaoke">Караоке
+              </label>
+
+              <label class="booking__label">
+                <input class="booking__input" type="checkbox" name="extra" value="vr">VR
+              </label>
+
+            </fieldset>
+          </fieldset>
+
+          <fieldset class="booking__fieldset">
+            <legend class="booking__legend">Выбери дату и время</legend>
+
+            <div class="booking__wrapper">
+              <label class="booking__label" for="date">Дата*</label>
+              <input class="booking__input" id="date" type="date" required name="date">
+
+              <label class="booking__label" for="time">Время*</label>
+              <input class="booking__input" id="time" type="time" required name="time">
+
+              <label class="booking__label">
+                <input class="booking__input" id="people" type="number" min="1" required name="people"
+                  placeholder="Сколько человек">
+              </label>
+            </div>
+
+            <div class="booking__wrapper">
+              <label class="booking__label" for="name">Имя*</label>
+              <input class="booking__input" id="name" type="text" required name="name">
+
+              <label class="booking__label" for="last-name">Фамилия*</label>
+              <input class="booking__input" id="last-name" type="text" required name="last-name">
+            </div>
+
+            <div class="booking__wrapper">
+              <label class="booking__label" for="phone">Телефон*</label>
+              <input class="booking__input" id="phone" type="tel" required name="phone">
+
+              <label class="booking__label" for="email">E-mail</label>
+              <input class="booking__input" id="email" type="email" name="email">
+            </div>
+
+          </fieldset>
+
+          <button class="booking__button" type="submit">Забронировать</button>
+          <label class="booking__agreement">
+            <input class="booking__input" type="checkbox" required name="agreement">
+            Согласен на обработку данных
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">О нас</h2>
+
+        <div class="about__image-box">
+          <img src="images/about-img.jpg" alt="">
+        </div>
+        <div class="about__content-box">
+          <div class="about__wrapper">
+            <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространтсво
+              виртуальной
+              реальности в
+              центральной
+              части города.
+            </p>
+
+            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и
+              радовать
+              Вас
+              топовыми игровыми
+              разработками со всего мира.
+            </p>
+          </div>
+
+          <blockquote class="about__quote">
+            <p class="about__quote-text">GAME OVER &mdash;
+              это место незабываемых впечатлений</p>
+
+            <figure class="about__author">
+              <img class="about__avatar" src="images/avatar.jpg" alt="">
+              <figcaption class="about__name"> Аркадий Абакшин, создатель
+                игровой
+                территории GAME
+                OVER</figcaption>
+            </figure>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feedback">
+      <div class="container">
+        <h2 class="section__title">Отзывы посетителей</h2>
+
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <figure class="feedback__figure">
+              <img class="feedback__img" src="images/reviews/review-1.jpg" alt="фото пользователя">
+              <figcaption class="feedback__name">Макс Самойлов</figcaption>
+            </figure>
+            <p class="feedback__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это
+              просто бомба, никогда еще я не был в
+              таком полном игровом погружении. Сервис на высоте!</p>
+          </li>
+          <li class="feedback__item">
+            <figure class="feedback__figure">
+              <img class="feedback__img" src="images/reviews/review-2.jpg" alt="фото пользователя">
+              <figcaption class="feedback__name">Макс Самойлов</figcaption>
+            </figure>
+            <p class="feedback__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
+              корпоратив! У нас в городе больше нет подобных
+              заведений</p>
+          </li>
+          <li class="feedback__item">
+            <figure class="feedback__figure">
+              <img class="feedback__img" src="images/reviews/review-3.jpg" alt="фото пользователя">
+              <figcaption class="feedback__name">Макс Самойлов</figcaption>
+            </figure>
+            <p class="feedback__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в
+              стиле звездных войн, попал в атмосферу
+              космоса</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section class="section faq">
+      <div class="container">
+        <h2 class="section__title">Частые вопросы</h2>
+
+        <ul class="faq__list">
+          <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+          <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
+          <li class="faq__item">Как получить VIP карту?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p class="footer__title">Контакты</p>
+
+      <address class="address">
+
+        <a class="address__item address__item_city"
+          href="https://www.google.com/maps?rlz=1C1SQJL_enRU882RU882&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQLhgBGAoYQxiABBiKBTIQCAIQABgBGAoYQxiABBiKBTIMCAMQABgKGLEDGIAEMhAIBBAAGIMBGLEDGIAEGIoFMg8IBRAAGAoYgwEYsQMYgAQyCQgGEAAYChiABDIQCAcQABiDARixAxiABBiKBTIJCAgQABgKGIAE0gEHOTU5ajBqN6gCALACAA&q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjFgvf8i92CAxX4ExAIHa2pB4cQ_AUoAnoECAQQBA"
+          target="_blank">г.
+          Москва ул. Аквамарина, 16</a>
+
+        <a class="address__item address__item_phone" href="tel:89509302893" target="_blank">8(950)930-28-93</a>
+        <a class="address__item address__item_mail" href="mailto:GameOver@gmail.com"
+          target="_blank">GameOver@gmail.com</a>
+      </address>
+
+      <ul class="social">
+        <li class="social__item"><a class="social__link" href="https://vk.com/" target="_blank"><img
+              class="social__image" src="images/icons/vk.svg" alt="иконка вконтакте"></a></li>
+        <li class="social__item"><a class="social__link" href="https://web.telegram.org" target="_blank"><img
+              class="social__image" src="images/icons/telegram.svg" alt="иконка телеграма"></a>
+        </li>
+        <li class="social__item"><a class="social__link" href="https://ru.pinterest.com/" target="_blank"><img
+              class="social__image" src="images/icons/pinterest.svg" alt="иконка пинтерест"></a>
+        </li>
+        <li class="social__item"><a class="social__link" href="https://ru.wikipedia.org/wiki/StumbleUpon"
+            target="_blank"><img class="social__image" src="images/icons/stumbleupon.svg" alt="иконка СтамблАпон"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
