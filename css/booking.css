@@ -1,0 +1,101 @@
+.booking {
+  background-color: #440F51;
+  padding-bottom: 80px;
+}
+
+.booking__legend {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px
+}
+
+.booking__fieldset {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.booking__fieldset_book_room {
+  justify-content: space-between;
+}
+
+.booking__fieldset:not(:last-child, .booking__fieldset_book_activity) {
+  margin-bottom: 40px;
+}
+
+.booking__fieldset_book_collection {
+  column-gap: 100px;
+}
+
+.booking__legend {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking__fieldset_book_activity {
+  flex-basis: 300px;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 22px;
+}
+
+.booking__legend_title_activity {
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.booking__fieldset_book_date {
+  gap: 50px;
+}
+
+.booking__wrapper {
+  flex-basis: 300px;
+  row-gap: 14px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.booking__datetime-wrapper {
+  flex-basis: 134px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking__contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+input[type="date" i]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.booking__input_choose_datetime {
+  padding: 12px 0;
+  color: #211E1E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px
+}
+
+.booking__input {
+  flex-basis: 100%;
+}
+
+.booking__button {
+  padding: 16px 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #6C0287;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  transform: translateX(-90px);
+}

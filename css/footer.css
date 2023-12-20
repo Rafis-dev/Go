@@ -48,3 +48,9 @@
 .social__item:not(:last-child) {
   margin-right: 26px;
 }
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

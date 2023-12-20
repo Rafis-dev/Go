@@ -1,5 +1,7 @@
 @import "global.css";
+@import "header.css";
 @import "main.css";
+@import "services.css";
 @import "rooms.css";
 @import "booking.css";
 @import "about.css";
