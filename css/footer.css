@@ -64,10 +64,14 @@
 }
 
 .footer__footnote {
-  flex-basis: 160px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px
+}
+
+.footer__footnote-span {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .footer__footnote_text_right {
