@@ -31,9 +31,11 @@
 }
 
 .booking__room-label {
+  position: relative;
   flex-basis: 250px;
   color: #000;
   background-color: #fff;
+  border: 3px solid transparent;
   border-radius: 8px;
   text-align: center;
   font-family: Arial;
@@ -43,6 +45,24 @@
   text-transform: uppercase;
   padding: 7px 15px;
   cursor: pointer;
+}
+
+
+.booking__room-label:hover {
+  border: 3px solid #640AA3;
+  background: #EADEED;
+}
+
+.booking__room-label:focus-within {
+  border-color: #640AA3;
+  outline: none;
+  background: #FFF;
+}
+
+.booking__room-label:active {
+  border: 3px solid #FFF;
+  color: #FFF;
+  background: #6C0287;
 }
 
 .booking__fun-wrapper {
@@ -57,16 +77,18 @@
   margin-bottom: 24px;
 }
 
+.booking__fun-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .booking__fun-label {
-  display: block;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.booking__fun-label:not(:last-child) {
-  margin-bottom: 22px;
 }
 
 .booking__fun-input {
@@ -77,6 +99,10 @@
   vertical-align: top;
 }
 
+.booking__fun-input:focus {
+  outline: 1px solid #CD06FF;
+}
+
 .booking__date-wrapper {
   display: flex;
   justify-content: center;
@@ -84,17 +110,25 @@
 }
 
 .booking__date-box {
+  position: relative;
   flex-basis: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 14px;
 }
 
 .booking__date-label {
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px
+  line-height: 16px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.booking__date-input-wrapper {
+  width: 100%;
 }
 
 .booking__date-input {
@@ -105,8 +139,9 @@
   padding: 12px 27px 12px 12px;
 }
 
-.booking__date-input:not(:last-child) {
-  margin-bottom: 14px;
+.booking__date-input:focus {
+  outline: none;
+  border: 2px solid #CD06FF;
 }
 
 .booking__date-input_book_day,
@@ -114,13 +149,10 @@
   width: 45%;
 }
 
-.booking__date-label {
-  margin-bottom: 6px;
-}
-
 .booking__button {
   padding: 16px 50px;
   border-radius: 10px;
+  border: 3px solid transparent;
   background-color: #fff;
   color: #6C0287;
   font-size: 22px;
@@ -130,4 +162,20 @@
   display: block;
   margin-left: auto;
   transform: translateX(-90px);
+}
+
+.booking__button:hover {
+  border: 3px solid #6C0287;
+  background: #EADEED;
+}
+
+.booking__button:focus {
+  outline: none;
+  border: 3px solid #6C0287;
+  background: #FFF;
+}
+
+.booking__button:active {
+  background: #EADEED;
+  border-color: transparent;
 }

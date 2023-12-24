@@ -29,3 +29,18 @@
   text-transform: uppercase;
   color: inherit;
 }
+
+.header__btn:hover,
+.header__btn:focus {
+  border-color: #6C0287;
+  background: #6C0287;
+}
+
+.header__btn:focus {
+  outline: none;
+}
+
+.header__btn:active {
+  border-color: #000;
+  background: #640AA3;
+}
