@@ -49,20 +49,19 @@
 
 
 .booking__room-label:hover {
-  border: 3px solid #640AA3;
+  border-color: #640AA3;
   background: #EADEED;
 }
 
-.booking__room-label:focus-within {
-  border-color: #640AA3;
-  outline: none;
-  background: #FFF;
-}
-
-.booking__room-label:active {
-  border: 3px solid #FFF;
+.booking__room-input:active+.booking__room-label,
+.booking__room-input:checked+.booking__room-label {
+  border-color: #FFF;
   color: #FFF;
   background: #6C0287;
+}
+
+.booking__room-input:focus+.booking__room-label {
+  border-color: #640AA3;
 }
 
 .booking__fun-wrapper {

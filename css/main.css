@@ -102,7 +102,7 @@
   bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
-  outline: 1px solid transparent;
+  /* outline: 1px solid red; */
 }
 
 .main-section__icon {
@@ -111,21 +111,19 @@
   border-radius: 50%;
 }
 
+
+
 .main-section__down:hover .main-section__icon {
   color: #6C0287;
   background-color: #fff;
 }
 
 .main-section__down:focus {
-  outline-color: #CD06FF;
+  outline: 1px solid #CD06FF;
 }
 
-.main-section__down:active {
-  outline: none;
-
-  .main-section__icon {
-    color: #fff;
-    background-color: #CD06FF;
-    border-color: #CD06FF;
-  }
+.main-section__down:active .main-section__icon {
+  color: #fff;
+  background-color: #CD06FF;
+  border-color: #CD06FF;
 }

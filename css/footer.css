@@ -33,6 +33,18 @@
   padding-left: 64px;
 }
 
+/* .address__item:hover {
+  color: #CD06FF;
+}
+
+.address__item:focus {
+  outline: 1px solid #CD06FF;
+}
+
+.address__item:active {
+  color: #640AA3
+} */
+
 .social {
   font-size: 0;
 }
@@ -44,18 +56,21 @@
 .social__link {
   display: block;
   color: #fff;
-  outline: 1px solid transparent;
+
 }
 
+.address__item:hover,
 .social__link:hover {
   color: #EADEED;
 }
 
+.address__item:focus,
 .social__link:focus {
-  outline-color: #CD06FF;
+  outline: 1px solid #CD06FF;
   color: #EADEED;
 }
 
+.address__item:active,
 .social__link:active {
   color: #CD06FF;
   outline: none;
