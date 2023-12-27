@@ -69,6 +69,7 @@
   border-radius: 10px;
   background: rgb(108, 2, 135);
   color: inherit;
+  transition: color .2s ease-in, background-color .2s ease-in;
 }
 
 .main-section__btn::before {
@@ -82,11 +83,12 @@
   background: #6C0287;
   filter: blur(10px);
   z-index: -1;
+
 }
 
 .main-section__btn:hover,
 .main-section__btn:focus {
-  background: #840AA3;
+  background-color: #840AA3;
 }
 
 .main-section__btn:focus {
@@ -94,7 +96,7 @@
 }
 
 .main-section__btn:active {
-  background: #640AA3;
+  background-color: #640AA3;
 }
 
 .main-section__down {
@@ -102,13 +104,15 @@
   bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
-  /* outline: 1px solid red; */
+  outline: 1px solid transparent;
+  transition: outline .2s ease-in;
 }
 
 .main-section__icon {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
+  transition: color .2s ease-in background-color .2s ease-in, border-color .2s ease-in;
 }
 
 

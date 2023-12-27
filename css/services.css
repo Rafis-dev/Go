@@ -9,6 +9,11 @@
   padding: 166px 40px 6px;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform .2s ease-in;
+}
+
+.services__item:hover {
+  transform: scale(1.1);
 }
 
 .services__name {

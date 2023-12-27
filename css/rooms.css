@@ -23,6 +23,8 @@
   z-index: 1;
 }
 
+
+
 .rooms__item_theme_retro {
   background-image: url("../images/1.jpg");
   background-position: center bottom 20%;
@@ -40,6 +42,11 @@
   background-image: url("../images/4.jpg");
 }
 
+.rooms__name {
+  outline: 1px solid transparent;
+  transition: outline .2s ease-in;
+}
+
 .rooms__name::after {
   content: "";
   position: absolute;
@@ -52,6 +59,12 @@
   z-index: -1;
 }
 
+
+
 .rooms__name:hover::after {
   background-color: #0004;
+}
+
+.rooms__name:focus {
+  outline: 1px solid #CD06FF;
 }

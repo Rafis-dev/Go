@@ -33,18 +33,6 @@
   padding-left: 64px;
 }
 
-/* .address__item:hover {
-  color: #CD06FF;
-}
-
-.address__item:focus {
-  outline: 1px solid #CD06FF;
-}
-
-.address__item:active {
-  color: #640AA3
-} */
-
 .social {
   font-size: 0;
 }
@@ -53,10 +41,15 @@
   display: inline-block;
 }
 
+.social__link,
+.address__item {
+  outline: 1px solid transparent;
+  transition: color .2s ease-in, outline .2s ease-in;
+}
+
 .social__link {
   display: block;
   color: #fff;
-
 }
 
 .address__item:hover,
