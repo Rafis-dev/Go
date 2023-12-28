@@ -66,7 +66,6 @@
 .address__item:active,
 .social__link:active {
   color: #CD06FF;
-  outline: none;
 }
 
 .social__item:not(:last-child) {
@@ -99,4 +98,26 @@
 
 .footer__footnote_text_right {
   text-align: right;
+}
+
+.footer__footnote-name,
+.footer__footnote-mail {
+  outline: 1px solid transparent;
+  transition: color .2s ease-in, outline .2s ease-in;
+}
+
+.footer__footnote-name:hover,
+.footer__footnote-mail:hover {
+  color: #EADEED;
+}
+
+.footer__footnote-name:focus,
+.footer__footnote-mail:focus {
+  outline: 1px solid #CD06FF;
+  color: #EADEED;
+}
+
+.footer__footnote-name:active,
+.footer__footnote-mail:active {
+  color: #CD06FF;
 }
