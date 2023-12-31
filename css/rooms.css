@@ -66,5 +66,5 @@
 }
 
 .rooms__name:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
 }

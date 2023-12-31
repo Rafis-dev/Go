@@ -33,7 +33,7 @@
 .booking__room-label {
   flex-basis: 250px;
   color: #000;
-  background-color: #fff;
+  background-color: var(--main-color);
   border: 3px solid transparent;
   border-radius: 8px;
   text-align: center;
@@ -55,8 +55,8 @@
 
 .booking__room-input:active+.booking__room-label,
 .booking__room-input:checked+.booking__room-label {
-  border-color: #FFF;
-  color: #FFF;
+  border-color: var(--main-color);
+  color: var(--main-color);
   background: #6C0287;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .booking__fun-input:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
 }
 
 .booking__date-wrapper {
@@ -144,7 +144,7 @@
 
 .booking__date-input:focus {
   outline: none;
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--secondary-color);
 }
 
 .booking__date-input_book_day,
@@ -156,7 +156,7 @@
   padding: 16px 50px;
   border-radius: 10px;
   border: 3px solid transparent;
-  background-color: #fff;
+  background-color: var(--main-color);
   color: #6C0287;
   font-size: 22px;
   font-weight: 700;
@@ -176,7 +176,7 @@
 .booking__button:focus {
   outline: none;
   border: 3px solid #6C0287;
-  background-color: #FFF;
+  background-color: var(--main-color);
 }
 
 .booking__button:active {

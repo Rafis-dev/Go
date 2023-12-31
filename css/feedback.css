@@ -14,13 +14,24 @@
   margin-right: 20px;
 }
 
-.feedback__img {
+.feedback__gradient {
+  position: relative;
   width: 280px;
   height: 280px;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
   margin-bottom: 11px;
+}
+
+.feedback__gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
 }
 
 .feedback__name,

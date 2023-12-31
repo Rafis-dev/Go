@@ -49,7 +49,7 @@
 
 .social__link {
   display: block;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .address__item:hover,
@@ -59,13 +59,13 @@
 
 .address__item:focus,
 .social__link:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
   color: #EADEED;
 }
 
 .address__item:active,
 .social__link:active {
-  color: #CD06FF;
+  color: var(--secondary-color);
 }
 
 .social__item:not(:last-child) {
@@ -113,11 +113,11 @@
 
 .footer__footnote-name:focus,
 .footer__footnote-mail:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
   color: #EADEED;
 }
 
 .footer__footnote-name:active,
 .footer__footnote-mail:active {
-  color: #CD06FF;
+  color: var(--secondary-color);
 }

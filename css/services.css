@@ -1,3 +1,7 @@
+.section_services_padding {
+  padding-bottom: 120px;
+}
+
 .services__list {
   display: flex;
   flex-wrap: wrap;
@@ -44,4 +48,8 @@
 
 .services__item_service_console {
   background-image: url("../assets/img/sony.jpg");
+}
+
+.services__item_service_down {
+  transform: translateY(70px);
 }

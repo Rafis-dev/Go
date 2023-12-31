@@ -44,7 +44,7 @@
 
 .main-section__info-span {
   display: block;
-  color: #CD06FF;
+  color: var(--secondary-color);
   font-family: Arial;
   font-size: 100px;
   font-weight: 900;
@@ -67,7 +67,7 @@
   line-height: 30px;
   text-transform: uppercase;
   border-radius: 10px;
-  background: rgb(108, 2, 135);
+  background: #6c0287;
   color: inherit;
   transition: color .2s ease-in, background-color .2s ease-in;
 }
@@ -109,8 +109,8 @@
 }
 
 .main-section__icon {
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 50%;
   transition: color .2s ease-in, background-color .2s ease-in, border-color .2s ease-in;
 }
@@ -119,15 +119,15 @@
 
 .main-section__down:hover .main-section__icon {
   color: #6C0287;
-  background-color: #fff;
+  background-color: var(--main-color);
 }
 
 .main-section__down:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
 }
 
 .main-section__down:active .main-section__icon {
-  color: #fff;
-  background-color: #CD06FF;
-  border-color: #CD06FF;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
