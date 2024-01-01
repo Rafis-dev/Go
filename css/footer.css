@@ -1,6 +1,6 @@
 .footer {
   padding: 50px 0 10px;
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: var(--footer-gradient);
 }
 
 .address {
@@ -54,13 +54,13 @@
 
 .address__item:hover,
 .social__link:hover {
-  color: #EADEED;
+  color: var(--footer-hover);
 }
 
 .address__item:focus,
 .social__link:focus {
   outline: 1px solid var(--secondary-color);
-  color: #EADEED;
+  color: var(--footer-hover);
 }
 
 .address__item:active,
@@ -108,13 +108,13 @@
 
 .footer__footnote-name:hover,
 .footer__footnote-mail:hover {
-  color: #EADEED;
+  color: var(--footer-hover);
 }
 
 .footer__footnote-name:focus,
 .footer__footnote-mail:focus {
   outline: 1px solid var(--secondary-color);
-  color: #EADEED;
+  color: var(--footer-hover);
 }
 
 .footer__footnote-name:active,

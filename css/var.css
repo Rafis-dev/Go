@@ -1,4 +1,21 @@
 :root {
   --main-color: #fff;
   --secondary-color: #CD06FF;
+  --booking-bg: #440F51;
+  --feedback-gradient: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
+  --footer-gradient: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.booking {
+  --booking-label-hover: #EADEED;
+  --booking-btn: #6C0287;
+}
+
+.faq {
+  --faq-even-bg: #440F51;
+  --icon-hover: #6C0287;
+}
+
+.footer {
+  --footer-hover: #EADEED;
 }

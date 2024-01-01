@@ -31,7 +31,7 @@
 
 .faq__item:nth-child(even) {
   color: var(--main-color);
-  background-color: #440F51;
+  background-color: var(--faq-even-bg);
 }
 
 .faq__item:nth-child(even) .faq__icon {
@@ -40,7 +40,7 @@
 }
 
 .faq__item:nth-child(even):hover .faq__icon {
-  color: #6C0287;
+  color: var(--icon-hover);
   background-color: var(--main-color);
 }
 
@@ -50,13 +50,13 @@
 }
 
 .faq__item:nth-child(odd) .faq__icon {
-  color: #440F51;
-  border: 1px solid #440F51;
+  color: var(--booking-bg);
+  border: 1px solid var(--faq-even-bg);
 }
 
 .faq__item:nth-child(odd):hover .faq__icon {
   color: var(--main-color);
-  background-color: #6C0287;
+  background-color: var(--icon-hover);
 }
 
 .faq__item:nth-child(even):active .faq__icon,
@@ -69,7 +69,7 @@
 }
 
 .faq__item:nth-child(odd):active .faq__icon {
-  color: #6C0287;
+  color: var(--icon-hover);
 }
 
 .faq__item:active .faq__active {

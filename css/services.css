@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
+  perspective: 300px;
 }
 
 .services__item {
@@ -16,9 +17,15 @@
   transition: transform .2s ease-in;
 }
 
+.services__item_service_down {
+  transform: translateY(70px);
+}
+
+
 .services__item:hover {
   transform: scale(1.1);
 }
+
 
 .services__name {
   font-size: 20px;
@@ -48,8 +55,4 @@
 
 .services__item_service_console {
   background-image: url("../assets/img/sony.jpg");
-}
-
-.services__item_service_down {
-  transform: translateY(70px);
 }
