@@ -26,6 +26,9 @@
   transform: scale(1.1);
 }
 
+.services__item_service_down:hover {
+  transform: translateY(70px) scale(1.1);
+}
 
 .services__name {
   font-size: 20px;
