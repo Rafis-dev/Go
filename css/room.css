@@ -1,0 +1,256 @@
+.room-header {
+  padding-bottom: 20px;
+}
+
+.main-room {
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-room_theme_retro {
+  background-image: url("../images/80vibes-bg.jpg");
+}
+
+.main-room_theme_wildwest {
+  background-image: url("../images/wildwest-bg.jpg");
+}
+
+.main-room_theme_starwars {
+  background-image: url("../images/starwars-bg.jpg");
+}
+
+.main-room_theme_neon {
+  background-image: url("../images/neon-bg.jpg");
+}
+
+.main-room__title {
+  font-size: 90px;
+  line-height: 89%;
+}
+
+.room-descr {
+  padding-top: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.room-details__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.room-details__img-wrapper {
+  flex-basis: 600px;
+  height: 424px;
+}
+
+.room-details__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room__details-descr {
+  flex-basis: 500px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.room__details-text:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.other-rooms {
+  padding-bottom: 50px;
+}
+
+.other-rooms__list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 229px;
+  gap: 20px;
+}
+
+.other-rooms__list .rooms__item {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.other-rooms__list .rooms__name {
+  max-width: 150px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .main-room {
+    min-height: 534px;
+  }
+
+  .header__back {
+    padding-top: 50px;
+  }
+
+  .room-descr {
+    padding-top: 70px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .room-details__img-wrapper {
+    flex-basis: 561px;
+
+  }
+
+  .room__details-descr {
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  .room-details__img-wrapper {
+    flex-basis: 461px;
+    height: 326px;
+  }
+
+  .room__details-descr {
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .other-rooms__list {
+    grid-auto-rows: 172px;
+  }
+
+}
+
+@media (max-width: 940px) {
+
+  .header__back {
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 175%;
+  }
+
+  .main-room {
+    min-height: 402px;
+  }
+
+  .main-room__title {
+    font-size: 60px;
+    line-height: 120%;
+  }
+
+  .room-descr {
+    padding-top: 60px;
+    font-size: 16px;
+  }
+
+  .room-details__img-wrapper {
+    flex-basis: 329px;
+  }
+
+  .room__details-descr {
+    flex-basis: 450px;
+    font-size: 16px;
+    line-height: 175%;
+  }
+
+  .other-rooms__list .rooms__item {
+    font-size: 20px;
+  }
+
+  .other-rooms__list .rooms__name {
+    max-width: 105px;
+  }
+
+}
+
+@media (max-width: 840px) {
+  .room__details-descr {
+    flex-basis: 313px;
+  }
+
+  .other-rooms__list {
+    grid-auto-rows: 134px;
+  }
+
+  .other-rooms {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+
+  .room-details__wrapper {
+    flex-wrap: wrap;
+
+  }
+
+  .room-details__img-wrapper,
+  .room__details-descr {
+    flex-basis: 100%;
+  }
+
+  .other-rooms__list {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 140px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .other-rooms {
+    padding-bottom: 15px;
+  }
+
+  .header__back {
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .main-room {
+    min-height: 168px;
+  }
+
+  .main-room__title {
+    font-size: 30px;
+  }
+
+  .room-descr {
+    padding-top: 30px;
+  }
+
+  .room__details-descr {
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .room__details-text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .room-details__img-wrapper {
+    height: 180px;
+  }
+
+
+}

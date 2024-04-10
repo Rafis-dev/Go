@@ -5,20 +5,25 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 40px 20px;
   perspective: 300px;
 }
 
 .services__item {
   flex-basis: 380px;
-  padding: 166px 40px 6px;
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform .2s ease-in;
+  display: flex;
+  min-height: 228px;
+  align-items: flex-end;
+  padding: 0 0 20px;
 }
 
 .services__item_service_down {
   transform: translateY(70px);
+  padding-bottom: 6px;
 }
 
 
@@ -33,7 +38,9 @@
 .services__name {
   font-size: 20px;
   font-weight: 700;
-  line-height: 28px
+  line-height: 140%;
+  flex-basis: 300px;
+  margin: 0 auto;
 }
 
 .services__item_service_vr {
@@ -58,4 +65,130 @@
 
 .services__item_service_console {
   background-image: url("../assets/img/sony.jpg");
+}
+
+@media (max-width: 1260px) {
+  .services__list {
+    gap: 30px 20px;
+  }
+
+  .services__item {
+    flex-basis: 340px;
+    min-height: 172px;
+  }
+
+  .services__name {
+    flex-basis: 247px;
+  }
+
+}
+
+@media (max-width: 1140px) {
+
+  .services__item {
+    flex-basis: 287px;
+    min-height: 172px;
+  }
+
+  .section_services_padding {
+    padding-bottom: 122px;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .section_services_padding {
+    padding-bottom: 30px;
+  }
+
+  .services__list {
+    gap: 20px;
+  }
+
+  .services__item {
+    flex-basis: 334px;
+    min-height: 200px;
+    padding-bottom: 40px;
+  }
+
+  .services__item_service_down {
+    padding-bottom: 12px;
+  }
+
+  .services__name {
+    flex-basis: 274px;
+  }
+
+  .services__item_service_down,
+  .services__item_service_down:hover {
+    transform: translateY(0);
+  }
+
+  .services__item_service_down:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 750px) {
+  .services__list {
+    gap: 14px;
+  }
+
+  .services__item {
+    flex-basis: 283px;
+    min-height: 150px;
+  }
+
+  .services__name {
+    flex-basis: 247px;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .services__list {
+    gap: 10px;
+  }
+
+  .services__item {
+    flex-basis: 240px;
+    min-height: 100px;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 3px;
+  }
+
+  .services__name {
+    flex-basis: 200px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .section_services_padding {
+    padding-bottom: 15px;
+  }
+
+  .services__item {
+    flex-basis: 173px;
+    min-height: 75px;
+  }
+
+  .services__list {
+    gap: 7px;
+  }
+
+  .services__name {
+    flex-basis: 115px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .services__item {
+    flex-basis: 126px;
+  }
+
 }

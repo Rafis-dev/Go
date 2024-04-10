@@ -1,15 +1,19 @@
+.rooms {
+  padding-bottom: 100px;
+}
+
 .rooms__list {
   list-style: none;
   text-align: center;
-  margin: -13px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 350px;
+  gap: 20px;
 }
 
 .rooms__item {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 0;
-  max-width: 580px;
+  display: flex;
   width: 100%;
   font-size: 70px;
   font-weight: 700;
@@ -18,8 +22,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 11.823% 0;
-  margin: 10px;
   z-index: 1;
 }
 
@@ -43,7 +45,10 @@
 }
 
 .rooms__name {
+  display: inline-block;
+  max-width: 227px;
   outline: 1px solid transparent;
+  margin: auto;
   transition: outline .2s ease-in;
 }
 
@@ -67,4 +72,57 @@
 
 .rooms__name:focus {
   outline: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 1140px) {
+  .rooms {
+    padding-bottom: 70px;
+  }
+
+  .rooms__item {
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  .rooms__list {
+    grid-auto-rows: 267px;
+  }
+}
+
+
+
+@media (max-width: 860px) {
+  .rooms {
+    padding-bottom: 60px;
+  }
+
+  .rooms__item {
+    font-size: 40px;
+    line-height: 125%;
+  }
+
+  .rooms__list {
+    grid-auto-rows: 200px;
+  }
+
+  .rooms__name {
+    max-width: 129px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rooms {
+    padding-bottom: 30px;
+  }
+
+  .rooms__item {
+    font-size: 26px;
+    line-height: 131%;
+  }
+
+  .rooms__list {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 168px;
+  }
+
 }

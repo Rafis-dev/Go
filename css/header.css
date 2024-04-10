@@ -37,6 +37,53 @@
   color: #640AA3
 }
 
+.header__mobile-btn {
+  display: none;
+  height: 29px;
+  position: relative;
+  outline-offset: 10px;
+  outline: 1px solid transparent;
+}
+
+.header__mobile-line {
+  display: block;
+  width: 54px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #6C0287;
+  transition: background-color .2s ease-in;
+}
+
+.header__mobile-btn:hover .header__mobile-line {
+  background-color: #CD06FF;
+}
+
+.header__mobile-btn:focus {
+  outline: 1px solid #CD06FF;
+  transition: outline .2s ease-in;
+}
+
+.header__mobile-line:before,
+.header__mobile-line:after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: inherit;
+}
+
+.header__mobile-line:before {
+  top: 0;
+  left: 0;
+}
+
+.header__mobile-line:after {
+  bottom: 0;
+  left: 0;
+  width: 31px;
+}
+
 .header__btn {
   padding: 12px 32px;
   border-radius: 10px;
@@ -62,4 +109,111 @@
 .header__btn:active {
   border-color: #000;
   background: #640AA3;
+}
+
+.header__back {
+  display: block;
+  padding-top: 60px;
+  font-size: 22px;
+  line-height: 127%;
+  font-weight: 700;
+
+}
+
+.header__back::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: baseline;
+  width: 30px;
+  height: 15px;
+  background: url("../images/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media (max-width: 1240px) {
+  .header__logo {
+    max-width: 87px;
+    height: 55px;
+  }
+
+  .nav {
+    font-size: 18px;
+    line-height: 122%;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .header__btn {
+    padding: 10px 26px;
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+}
+
+@media (max-width: 940px) {
+  .nav__list {
+    display: none;
+  }
+
+  .header__mobile-btn {
+    display: block;
+
+  }
+
+  .header__nav {
+    order: -1;
+  }
+
+  .header__back {
+    font-size: 16px;
+    line-height: 175%;
+  }
+
+  .header__back::before {
+    width: 26px;
+    height: 13px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .header__btn {
+    display: none;
+  }
+
+  .header__mobile-btn {
+    height: 20px;
+  }
+
+  .header__mobile-line,
+  .header__mobile-line:before,
+  .header__mobile-line:after {
+    width: 39px;
+    height: 3.45px;
+  }
+
+  .header__mobile-line:after {
+    width: 22.4px;
+  }
+
+  .header__logo {
+    max-width: 66px;
+    height: 42px;
+  }
+
+  .header__back::before {
+    width: 16px;
+    height: 8px;
+    margin-right: 6px;
+  }
+
+  .room-header {
+    padding-bottom: 15px;
+  }
 }

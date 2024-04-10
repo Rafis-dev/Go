@@ -1,6 +1,6 @@
 .booking {
   background-color: var(--booking-bg);
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 .booking__legend {
@@ -28,6 +28,7 @@
 .booking__room-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .booking__room-label {
@@ -110,6 +111,12 @@
   gap: 50px;
 }
 
+
+.booking__datetime-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .booking__date-box {
   position: relative;
   flex-basis: 300px;
@@ -153,6 +160,8 @@
 }
 
 .booking__button {
+  position: relative;
+  z-index: 2;
   padding: 16px 50px;
   border-radius: 10px;
   border: 3px solid transparent;
@@ -166,7 +175,9 @@
   margin-left: auto;
   transform: translateX(-90px);
   transition: border-color .2s ease-in, background-color .2s ease-in;
+  box-shadow: 0px 0px 20px #fff;
 }
+
 
 .booking__button:hover {
   border: 3px solid var(--booking-btn);
@@ -182,4 +193,173 @@
 .booking__button:active {
   background-color: var(--booking-label-hover);
   border-color: transparent;
+}
+
+@media (max-width: 1240px) {
+
+  .booking {
+    padding: 60px 0;
+  }
+
+  .booking__room-label {
+    flex-basis: 180px;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 10px 20px;
+  }
+
+  .booking__fun-wrapper {
+    justify-content: space-between;
+    gap: 32px 40px;
+  }
+
+
+  .booking__date-wrapper {
+    justify-content: space-between;
+
+  }
+
+  .booking__button {
+    transform: unset;
+  }
+
+}
+
+@media (max-width: 940px) {
+
+  .booking {
+    padding: 50px 0;
+  }
+
+  .booking__room-label {
+    flex-basis: 150px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .booking__fun-wrapper {
+    flex-wrap: wrap;
+  }
+
+
+  .booking__fun-input {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  .booking__date-wrapper {
+    flex-wrap: wrap;
+    gap: 42px 20px;
+  }
+
+
+  .booking__datetime-wrapper {
+    flex-basis: 300px;
+  }
+
+  .booking__date-input_book_people {
+    flex-basis: 300px;
+  }
+
+  .booking__date-input {
+    padding: 12px 21px 12px 12px;
+  }
+
+
+  .booking__date-box_type_datetime {
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 690px) {
+
+  .booking {
+    padding: 30px 0;
+  }
+
+  .booking__room-wrapper {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+
+  .booking__room-label {
+    flex-basis: 47%;
+    padding: 6px 20px;
+  }
+
+  .booking__fun-fieldset {
+    flex-basis: 100%;
+  }
+
+  .booking__fun-input {
+    width: 30px;
+    height: 30px;
+  }
+
+  .booking__date-input {
+    padding: 10px 6px 10px 6px;
+  }
+
+  .booking__datetime-wrapper {
+    gap: 35px;
+  }
+
+  .booking__datetime-wrapper {
+    flex-basis: 100%;
+    gap: 12px;
+  }
+
+  .booking__date-box_type_datetime {
+    flex-wrap: wrap;
+  }
+
+  .booking__date-box,
+  .booking__date-input_book_people {
+    flex-basis: 100%;
+  }
+
+  .booking__date-input {
+    flex-basis: 100%;
+  }
+
+  .booking__button {
+    width: 100%;
+    font-size: 18px;
+    line-height: 144%;
+  }
+
+  .booking__legend {
+    margin-bottom: 15px;
+  }
+
+  .booking__fieldset {
+    margin-bottom: 30px;
+  }
+
+  .booking__legend,
+  .booking__fun-legend {
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .booking__fun-label {
+    font-size: 16px;
+  }
+
+  .booking {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking__room-label {
+    font-size: 14px;
+    line-height: 129%;
+    flex-basis: 46%;
+    padding: 6px 12px
+  }
 }
