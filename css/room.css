@@ -2,9 +2,12 @@
   padding-bottom: 20px;
 }
 
+.room-header .header__wrapper {
+  margin-bottom: 60px;
+}
+
 .main-room {
   padding: 0;
-
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 750px;
@@ -101,8 +104,8 @@
     min-height: 534px;
   }
 
-  .header__back {
-    padding-top: 50px;
+  .room-header .header__wrapper {
+    margin-bottom: 50px;
   }
 
   .room-descr {
@@ -144,9 +147,12 @@
 @media (max-width: 940px) {
 
   .header__back {
-    padding-top: 40px;
     font-size: 16px;
     line-height: 175%;
+  }
+
+  .room-header .header__wrapper {
+    margin-bottom: 40px;
   }
 
   .main-room {
@@ -222,9 +228,12 @@
   }
 
   .header__back {
-    padding-top: 20px;
     font-size: 12px;
     line-height: 133%;
+  }
+
+  .room-header .header__wrapper {
+    margin-bottom: 20px;
   }
 
   .main-room {

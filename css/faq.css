@@ -82,6 +82,10 @@
     margin-bottom: 16px;
   }
 
+  .faq__item:last-child {
+    display: none;
+  }
+
   .faq__item:nth-child(even) {
     color: #1C1A1A;
     background-color: var(--main-color);
